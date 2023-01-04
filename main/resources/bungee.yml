@@ -1,4 +1,0 @@
-name: Noir
-main: me.klop233.noir.BungeeMain
-version: ${ project.version }
-author: Klop233
