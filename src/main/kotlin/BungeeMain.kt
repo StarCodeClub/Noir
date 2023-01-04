@@ -9,18 +9,14 @@ import net.md_5.bungee.config.YamlConfiguration
 import java.io.File
 import java.nio.file.Files
 
-abstract class BungeeMain: Plugin() {
-    private var miraiVersion = ""
-    private var version = ""
-    private var group = 0L
-    private var bot = 0L
-    private lateinit var config: Configuration
+class BungeeMain: Plugin() {
 
     override fun onEnable() {
         if (this.proxy.pluginManager.getPlugin("MiraiMC") == null) {
             warn(Messages.NO_MIRAIMC.toString())
             return
         }
+        instance = this
 
         // 读取配置文件
         saveDataFolder()
@@ -31,8 +27,8 @@ abstract class BungeeMain: Plugin() {
         // 初始化变量
         miraiVersion = this.proxy.pluginManager.getPlugin("MiraiMC").description.version
         version = this.description.version
-        group = config.getLong("general.groupID")
-        bot = config.getLong("general.botID")
+        botID = config.getLong("general.groupID")
+        groupID = config.getLong("general.botID")
 
         // 注册命令和事件
         this.proxy.pluginManager.registerCommand(this, CommandHandler())
@@ -59,10 +55,35 @@ abstract class BungeeMain: Plugin() {
     }
 
     private fun saveDefaultConfig() {
-        var config = File(this.dataFolder, "config.yml")
+        val config = File(this.dataFolder, "config.yml")
 
         if (!config.exists()) {
-            Files.copy(this.getResourceAsStream("config.yml"), file.toPath())
+            Files.copy(this.getResourceAsStream("config.yml"), config.toPath())
+        }
+    }
+
+    companion object {
+        private lateinit var instance: BungeeMain
+        private var config = Configuration()
+        private var miraiVersion = ""
+        private var version = ""
+        private var botID = 0L
+        private var groupID = 0L
+
+        fun getConfig(): Configuration {
+            return config
+        }
+
+        fun getBotID(): Long {
+            return botID
+        }
+
+        fun getGroupID(): Long {
+            return groupID
+        }
+
+        fun getInstance(): BungeeMain {
+            return instance
         }
     }
 }
