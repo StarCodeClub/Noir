@@ -61,6 +61,8 @@
 <div align="center">
 
 <img src="https://github.com/Klop233/Klop233/raw/main/CG-4-1.png"/>
+
+---
 この旅は、 <br>
 彼女のなかに <br>
 なにを残していくのだろう
