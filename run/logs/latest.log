@@ -1,0 +1,84 @@
+[14:57:00] [main/INFO]: Using standard Java JCE cipher.
+[14:57:00] [main/INFO]: Using standard Java compressor.
+[14:57:00] [main/INFO]: Enabled Waterfall version git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:13085b9:510
+[14:57:01] [main/INFO]: Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+[14:57:01] [main/INFO]: Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+[14:57:01] [main/INFO]: Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+[14:57:01] [main/INFO]: Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+[14:57:01] [main/INFO]: Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+[14:57:01] [main/INFO]: Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+[14:57:01] [main/INFO]: Attempting to update plugin from null to ModuleVersion(build=510, git=13085b9)
+[14:57:01] [main/INFO]: Attempting to Jenkins download module cmd_alert v510
+[14:57:02] [main/INFO]: Download complete
+[14:57:02] [main/INFO]: Attempting to update plugin from null to ModuleVersion(build=510, git=13085b9)
+[14:57:02] [main/INFO]: Attempting to Jenkins download module cmd_find v510
+[14:57:02] [main/INFO]: Download complete
+[14:57:02] [main/INFO]: Attempting to update plugin from null to ModuleVersion(build=510, git=13085b9)
+[14:57:02] [main/INFO]: Attempting to Jenkins download module cmd_list v510
+[14:57:02] [main/INFO]: Download complete
+[14:57:02] [main/INFO]: Attempting to update plugin from null to ModuleVersion(build=510, git=13085b9)
+[14:57:02] [main/INFO]: Attempting to Jenkins download module cmd_send v510
+[14:57:02] [main/INFO]: Download complete
+[14:57:02] [main/INFO]: Attempting to update plugin from null to ModuleVersion(build=510, git=13085b9)
+[14:57:02] [main/INFO]: Attempting to Jenkins download module cmd_server v510
+[14:57:02] [main/INFO]: Download complete
+[14:57:02] [main/INFO]: Attempting to update plugin from null to ModuleVersion(build=510, git=13085b9)
+[14:57:02] [main/INFO]: Attempting to Jenkins download module reconnect_yaml v510
+[14:57:02] [main/INFO]: Download complete
+[14:57:02] [main/INFO]: Loaded plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:02] [main/INFO]: Loaded plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:03] [main/INFO] [MiraiMC]: Verifying mirai-core-all-2.13.2.jar
+[14:57:04] [main/INFO] [MiraiMC]: Downloading https://maven.aliyun.com/nexus/content/groups/public/net/mamoe/mirai-core-all/2.13.2/mirai-core-all-2.13.2-all.jar
+[14:57:10] [main/INFO] [MiraiMC]: Loading library plugins\MiraiMC\MiraiBot\libs\mirai-core-all-2.13.2.jar
+[14:57:10] [main/INFO]: Loaded plugin MiraiMC version 1.7.1 by DreamVoid
+[14:57:10] [main/INFO]: Loaded plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Loaded plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Loaded plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Loaded plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Loaded plugin Noir version ${ project.version } by Klop233
+[14:57:10] [main/WARN]: Forced host server pvp is not defined
+[14:57:10] [main/INFO]: Enabled plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Enabled plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO] [MiraiMC]: Mirai working dir: default
+[14:57:10] [main/INFO] [MiraiMC]: Starting Mirai-Events listener.
+[14:57:10] [main/INFO] [MiraiMC]: Registering commands.
+[14:57:10] [main/INFO] [MiraiMC]: Registering events.
+[14:57:10] [main/INFO] [MiraiMC]: Loading auto-login file.
+[14:57:10] [main/INFO] [MiraiMC]: Initializing SQLite database.
+[14:57:10] [MiraiMC Pool Thread #0/INFO] [MiraiMC]: [AutoLogin] Starting auto login task.
+[14:57:10] [main/INFO] [MiraiMC]: Initializing bStats metrics.
+[14:57:10] [main/WARN] [MiraiMC]: 确保您正在使用开源的MiraiMC插件，未知来源的插件可能会盗取您的账号！
+[14:57:10] [main/WARN] [MiraiMC]: 请始终从Github或作者指定的其他途径下载插件: https://github.com/DreamVoid/MiraiMC
+[14:57:10] [MiraiMC Pool Thread #0/INFO] [MiraiMC]: Checking update...
+[14:57:10] [MiraiMC Pool Thread #0/INFO] [MiraiMC]: 你使用的是最新版本
+[14:57:10] [main/INFO] [MiraiMC]: All tasks done. Welcome to use MiraiMC!
+[14:57:10] [main/INFO]: Enabled plugin MiraiMC version 1.7.1 by DreamVoid
+[14:57:10] [main/INFO]: Enabled plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Enabled plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Enabled plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO]: Enabled plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:13085b9:510 by WaterfallMC
+[14:57:10] [main/INFO] [Noir]: 欢迎使用 Noir, 插件已加载完毕
+[14:57:10] [main/INFO]: Enabled plugin Noir version ${ project.version } by Klop233
+[14:57:10] [Netty Boss IO Thread #0/INFO]: Listening on /0.0.0.0:25577
+[14:57:12] [MiraiMC Pool Thread #1/INFO] [MiraiMC]: ========== [ MiraiMC 公告版 ] ==========
+[14:57:12] [MiraiMC Pool Thread #1/INFO] [MiraiMC]: 1.7.1 已适配 mirai 2.12.0 及以上版本，
+[14:57:12] [MiraiMC Pool Thread #1/INFO] [MiraiMC]: 请及时更新使用。
+[14:57:12] [MiraiMC Pool Thread #1/INFO] [MiraiMC]: =======================================
+[14:57:36] [main/INFO]: Noir 已经成功加载, 但是你没有权限使用 Noir
+[14:57:39] [main/INFO]: Noir 已经成功加载, 但是你没有权限使用 Noir
+[14:58:09] [main/INFO]: Noir 已经成功加载, 但是你没有权限使用 Noir
+[14:58:10] [main/INFO]: Noir 已经成功加载, 但是你没有权限使用 Noir
+[14:58:11] [main/INFO]: Noir 已经成功加载, 但是你没有权限使用 Noir
+[14:58:11] [main/INFO]: Command not found
+[14:58:12] [main/INFO]: Noir 已经成功加载, 但是你没有权限使用 Noir
+[14:58:23] [Shutdown Thread/INFO]: Closing listener [id: 0x19e4a8b3, L:/[0:0:0:0:0:0:0:0]:25577]
+[14:58:23] [Shutdown Thread/INFO]: Closing pending connections
+[14:58:23] [Shutdown Thread/INFO]: Disconnecting 0 connections
+[14:58:24] [Shutdown Thread/INFO]: Saving reconnect locations
+[14:58:24] [Shutdown Thread/INFO]: Disabling plugins
+[14:58:24] [Shutdown Thread/INFO] [MiraiMC]: Stopping bot event listener.
+[14:58:24] [Shutdown Thread/INFO] [MiraiMC]: Closing all bots
+[14:58:24] [Shutdown Thread/INFO] [MiraiMC]: Closing SQLite database.
+[14:58:24] [Shutdown Thread/INFO] [MiraiMC]: All tasks done. Thanks for use MiraiMC!
+[14:58:24] [Shutdown Thread/INFO]: Closing IO threads
+[14:58:26] [Shutdown Thread/INFO]: Thank you and goodbye
