@@ -58,7 +58,7 @@ abstract class BungeeMain: Plugin() {
             this.dataFolder.mkdir()
     }
 
-    fun saveDefaultConfig() {
+    private fun saveDefaultConfig() {
         var config = File(this.dataFolder, "config.yml")
 
         if (!config.exists()) {
