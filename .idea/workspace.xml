@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="14071ef7-7993-4feb-b1a1-30468fba411d" name="变更" comment="fix" />
+=======
+    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> 283ec0767ec287972588c2bb8295a4e682f4999b
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +21,7 @@
       <ProjectState />
     </projectState>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -23,12 +30,15 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 283ec0767ec287972588c2bb8295a4e682f4999b
   <component name="ProjectId" id="2JqqNDNtzgKDo2cgBjCdGfIVGe2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -40,6 +50,17 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> 283ec0767ec287972588c2bb8295a4e682f4999b
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -49,8 +70,11 @@
       <option name="presentableId" value="Default" />
       <updated>1672815922775</updated>
       <workItem from="1672815924653" duration="42000" />
+<<<<<<< HEAD
       <workItem from="1672826465215" duration="71000" />
       <workItem from="1672826545291" duration="20000" />
+=======
+>>>>>>> 283ec0767ec287972588c2bb8295a4e682f4999b
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
@@ -83,9 +107,12 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+=======
+>>>>>>> 283ec0767ec287972588c2bb8295a4e682f4999b
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -98,10 +125,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/src" />
     </ignored-roots>
+=======
+>>>>>>> 283ec0767ec287972588c2bb8295a4e682f4999b
     <MESSAGE value="update" />
     <MESSAGE value="修正gradlew脚本权限问题" />
     <MESSAGE value="update workspace.xml" />
