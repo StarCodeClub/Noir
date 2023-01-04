@@ -1,4 +1,3 @@
-version: 2
 modules:
 - jenkins://cmd_alert
 - jenkins://cmd_find
@@ -6,3 +5,4 @@ modules:
 - jenkins://cmd_send
 - jenkins://cmd_server
 - jenkins://reconnect_yaml
+version: 2
