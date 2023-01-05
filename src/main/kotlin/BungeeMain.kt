@@ -1,6 +1,7 @@
 package me.klop233.noir
 
 import me.klop233.noir.bungee.CommandHandler
+import me.klop233.noir.bungee.event.EventCaller
 import me.klop233.noir.bungee.eventListener.GetPlayers
 import net.md_5.bungee.api.plugin.Plugin
 import net.md_5.bungee.config.Configuration
@@ -10,13 +11,14 @@ import java.io.File
 import java.nio.file.Files
 
 class BungeeMain: Plugin() {
-
-    override fun onEnable() {
+    override fun onEnable()  {
         if (this.proxy.pluginManager.getPlugin("MiraiMC") == null) {
             warn(Messages.NO_MIRAIMC.toString())
             return
         }
         instance = this
+
+        info("Dependency check pass, loading Noir v$version")
 
         // 读取配置文件
         saveDataFolder()
@@ -29,25 +31,22 @@ class BungeeMain: Plugin() {
         version = this.description.version
         botID = config.getLong("general.groupID")
         groupID = config.getLong("general.botID")
+        admin = config.getLongList("general.admin")
 
         // 注册命令和事件
         this.proxy.pluginManager.registerCommand(this, CommandHandler())
+        this.proxy.pluginManager.registerListener(this, EventCaller())
         this.proxy.pluginManager.registerListener(this, GetPlayers())
 
         info(Messages.WELCOME.toString())
+        info("Environment: Noir $version   MiraiMC $miraiVersion")
     }
 
     override fun onDisable() {
-
+        Messages.GOODBYE.toString()
     }
 
-    private fun info(message: String) {
-        this.logger.info(message)
-    }
 
-    private fun warn(message: String) {
-        this.logger.warning(message)
-    }
 
     private fun saveDataFolder() {
         if (!this.dataFolder.exists())
@@ -69,6 +68,15 @@ class BungeeMain: Plugin() {
         private var version = ""
         private var botID = 0L
         private var groupID = 0L
+        private var admin = listOf<Long>()
+
+        fun info(message: String) {
+            instance.logger.info(message)
+        }
+
+        fun warn(message: String) {
+            instance.logger.warning(message)
+        }
 
         fun getConfig(): Configuration {
             return config
@@ -80,6 +88,10 @@ class BungeeMain: Plugin() {
 
         fun getGroupID(): Long {
             return groupID
+        }
+
+        fun getAdmin(): List<Long> {
+            return admin
         }
 
         fun getInstance(): BungeeMain {
