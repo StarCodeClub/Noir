@@ -1,7 +1,10 @@
 package me.klop233.noir.bungee
 
+import me.klop233.noir.BungeeMain
 import me.klop233.noir.Messages
+import net.md_5.bungee.api.ChatColor
 import net.md_5.bungee.api.CommandSender
+import net.md_5.bungee.api.chat.TextComponent
 import net.md_5.bungee.api.plugin.Command
 import java.util.*
 
@@ -19,11 +22,11 @@ class CommandHandler : Command("noir") {
 
         when (args[0].lowercase(Locale.getDefault())) {
             "version" -> {
-
+                versionCommandHandle(sender)
             }
 
             "reload" -> {
-
+                reloadCommandHandle(sender)
             }
 
             "help" -> {
@@ -31,12 +34,34 @@ class CommandHandler : Command("noir") {
             }
 
             "group" -> {
-                groupCommandHandle(sender, args)
+                // groupCommandHandle(sender, args)
             }
         }
     }
 
-    private fun groupCommandHandle(sender: CommandSender, args: Array<out String>) {
+    private fun versionCommandHandle(sender: CommandSender) {
+        val messages = mutableListOf<TextComponent>()
+        fun add(msg: String) {
+            messages.add(
+                TextComponent(
+                    ChatColor.translateAlternateColorCodes('&', msg)
+                )
+            )
+        }
+
+        add("")
+        add("&dNoir information")
+        add("&dNoir&7: &b${BungeeMain.version}")
+        add("&aMiraiMC&7: &b${BungeeMain.miraiVersion}")
+        add("&eBot ID&7： &b${BungeeMain.getBotID()}")
+        add("&eGroup ID&7: &b${BungeeMain.getGroupID()}")
+
+        messages.forEach {
+            sender.sendMessage(it)
+        }
+    }
+
+    private fun reloadCommandHandle(sender: CommandSender) {
 
     }
 }

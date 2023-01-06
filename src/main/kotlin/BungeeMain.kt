@@ -66,12 +66,12 @@ class BungeeMain : Plugin() {
 
     companion object {
         private lateinit var instance: BungeeMain
-        private var config = Configuration()
-        private var miraiVersion = ""
-        private var version = ""
-        private var botID = 0L
-        private var groupID = 0L
-        private var admin = listOf<Long>()
+        @JvmField var config = Configuration()
+        @JvmField var miraiVersion = ""
+        @JvmField var version = ""
+        @JvmField var botID = 0L
+        @JvmField var groupID = 0L
+        @JvmField var admin = listOf<Long>()
 
         fun info(message: String) {
             instance.logger.info(message)
