@@ -33,8 +33,7 @@ class GetPlayers : Listener {
         players.forEach { i ->
             playerList.append(i.name).append(", ")
         }
-        playerList.removeSuffix(", ")
-        reply = reply.replace("%players%", playerList.toString())
+        reply = reply.replace("%players%", playerList.toString().drop(2)) // 去除后面的 ", "
 
         MiraiUtil.sendMiraiMessageAsync(
             e.getEvent().group, reply
