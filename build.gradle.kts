@@ -34,4 +34,13 @@ application {
     mainClass.set("MainKt")
 }
 
+tasks.processResources {
+    filesMatching("bungee.yml") {
+        expand(project.properties)
+    }
+
+    filesMatching("plugin.yml") {
+        expand(project.properties)
+    }
+}
 
