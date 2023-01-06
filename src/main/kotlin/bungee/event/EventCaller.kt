@@ -19,13 +19,13 @@ class EventCaller : Listener {
             call(GroupCommandType.GET_PLAYER, e)
         if (message.startsWith(BungeeMain.getConfig().getString("command.chat.qq2mc.trigger")))
             call(GroupCommandType.CHAT, e)
+        if (message.startsWith(BungeeMain.getConfig().getString("command.execute.trigger")))
+            call(GroupCommandType.EXECUTE_COMMAND, e)
     }
 
     private fun call(type: GroupCommandType, e: MiraiGroupMessageEvent) {
         BungeeMain.getInstance().proxy.pluginManager.callEvent(
-            NoirGroupCommandEvent(
-                type, e
-            )
+            NoirGroupCommandEvent(type, e)
         )
     }
 }

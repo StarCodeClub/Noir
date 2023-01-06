@@ -26,6 +26,7 @@ command:
     trigger: '/'
     # 是否加上执行命令花费的时间
     time-spent: false
+    sender-name: 'xiaomu18'
 
   chat:
     mc2qq:
