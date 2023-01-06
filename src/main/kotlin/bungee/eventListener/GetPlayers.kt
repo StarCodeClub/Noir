@@ -1,15 +1,13 @@
 package me.klop233.noir.bungee.eventListener
 
-import me.dreamvoid.miraimc.bungee.event.message.passive.MiraiGroupMessageEvent
 import me.klop233.noir.BungeeMain
 import me.klop233.noir.bungee.event.GroupCommandType
 import me.klop233.noir.bungee.event.NoirGroupCommandEvent
 import me.klop233.noir.bungee.utils.MiraiUtil
 import net.md_5.bungee.api.plugin.Listener
 import net.md_5.bungee.event.EventHandler
-import java.lang.StringBuilder
 
-class GetPlayers: Listener {
+class GetPlayers : Listener {
     @EventHandler
     fun onChat(e: NoirGroupCommandEvent) {
         if (e.getType() != GroupCommandType.GET_PLAYER)

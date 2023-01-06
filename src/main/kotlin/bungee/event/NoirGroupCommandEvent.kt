@@ -1,10 +1,9 @@
 package me.klop233.noir.bungee.event
 
-import me.dreamvoid.miraimc.api.bot.MiraiGroup
 import me.dreamvoid.miraimc.bungee.event.message.passive.MiraiGroupMessageEvent
 import net.md_5.bungee.api.plugin.Event
 
-class NoirGroupCommandEvent(type: GroupCommandType, miraiEvent: MiraiGroupMessageEvent): Event() {
+class NoirGroupCommandEvent(type: GroupCommandType, miraiEvent: MiraiGroupMessageEvent) : Event() {
     init {
         type.also { this.type = it }
         miraiEvent.also { this.miraiEvent = it }

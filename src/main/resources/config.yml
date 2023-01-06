@@ -26,3 +26,11 @@ command:
     trigger: '/'
     # 是否加上执行命令花费的时间
     time-spent: false
+
+  chat:
+    mc2qq:
+      trigger: '#'
+      format: '[MC]%name%: %message%'
+    qq2mc:
+      trigger: ''
+      format: '&7[&eQQ&7] &r%name%&7: &r%message%'

@@ -2,6 +2,7 @@ package me.klop233.noir
 
 import me.klop233.noir.bungee.CommandHandler
 import me.klop233.noir.bungee.event.EventCaller
+import me.klop233.noir.bungee.eventListener.Chat
 import me.klop233.noir.bungee.eventListener.GetPlayers
 import net.md_5.bungee.api.plugin.Plugin
 import net.md_5.bungee.config.Configuration
@@ -10,8 +11,8 @@ import net.md_5.bungee.config.YamlConfiguration
 import java.io.File
 import java.nio.file.Files
 
-class BungeeMain: Plugin() {
-    override fun onEnable()  {
+class BungeeMain : Plugin() {
+    override fun onEnable() {
         if (this.proxy.pluginManager.getPlugin("MiraiMC") == null) {
             warn(Messages.NO_MIRAIMC.toString())
             return
@@ -29,14 +30,15 @@ class BungeeMain: Plugin() {
         // 初始化变量
         miraiVersion = this.proxy.pluginManager.getPlugin("MiraiMC").description.version
         version = this.description.version
-        botID = config.getLong("general.groupID")
-        groupID = config.getLong("general.botID")
+        botID = config.getLong("general.botID")
+        groupID = config.getLong("general.groupID")
         admin = config.getLongList("general.admin")
 
         // 注册命令和事件
         this.proxy.pluginManager.registerCommand(this, CommandHandler())
         this.proxy.pluginManager.registerListener(this, EventCaller())
         this.proxy.pluginManager.registerListener(this, GetPlayers())
+        this.proxy.pluginManager.registerListener(this, Chat())
 
         info(Messages.WELCOME.toString())
         info("Environment: Noir $version   MiraiMC $miraiVersion")
@@ -45,7 +47,6 @@ class BungeeMain: Plugin() {
     override fun onDisable() {
         Messages.GOODBYE.toString()
     }
-
 
 
     private fun saveDataFolder() {
@@ -88,10 +89,6 @@ class BungeeMain: Plugin() {
 
         fun getGroupID(): Long {
             return groupID
-        }
-
-        fun getAdmin(): List<Long> {
-            return admin
         }
 
         fun getInstance(): BungeeMain {

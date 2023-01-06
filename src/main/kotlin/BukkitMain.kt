@@ -2,7 +2,7 @@ package me.klop233.noir
 
 import org.bukkit.plugin.java.JavaPlugin
 
-class BukkitMain: JavaPlugin() {
+class BukkitMain : JavaPlugin() {
     override fun onEnable() {
         info(Messages.WELCOME.toString())
     }

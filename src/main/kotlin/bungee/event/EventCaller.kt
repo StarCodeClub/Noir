@@ -5,7 +5,7 @@ import me.klop233.noir.BungeeMain
 import net.md_5.bungee.api.plugin.Listener
 import net.md_5.bungee.event.EventHandler
 
-class EventCaller: Listener {
+class EventCaller : Listener {
     @EventHandler
     fun onMiraiGroupMessage(e: MiraiGroupMessageEvent) {
         if (e.botID != BungeeMain.getConfig().getLong("general.botID"))
@@ -17,7 +17,8 @@ class EventCaller: Listener {
 
         if (message.startsWith(BungeeMain.getConfig().getString("command.getPlayers.trigger")))
             call(GroupCommandType.GET_PLAYER, e)
-
+        if (message.startsWith(BungeeMain.getConfig().getString("command.chat.qq2mc.trigger")))
+            call(GroupCommandType.CHAT, e)
     }
 
     private fun call(type: GroupCommandType, e: MiraiGroupMessageEvent) {

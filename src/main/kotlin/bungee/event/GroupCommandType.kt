@@ -4,6 +4,7 @@ enum class GroupCommandType {
     NOTHING,
     GET_PLAYER,
     BIND,
-    EXECUTE_COMMAND
+    EXECUTE_COMMAND,
+    CHAT
     ;
 }
