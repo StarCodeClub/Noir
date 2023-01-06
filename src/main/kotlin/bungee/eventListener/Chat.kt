@@ -19,8 +19,8 @@ class Chat : Listener {
         if (!e.message.startsWith(BungeeMain.getConfig().getString("command.chat.mc2qq.trigger")))
             return
 
-        var bot: MiraiBot
-        var group: MiraiGroup
+        val bot: MiraiBot
+        val group: MiraiGroup
 
         try {
             bot = MiraiBot.getBot(BungeeMain.getBotID())

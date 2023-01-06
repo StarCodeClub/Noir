@@ -11,7 +11,7 @@ enum class Messages(message: String) {
     NO_MIRAIMC("你没有安装 MiraiMC, 请先安装 MiraiMC --> https://github.com/DreamVoid/MiraiMC")
     ;
 
-    private var message = "";
+    private var message = ""
 
     init {
         this.message = message

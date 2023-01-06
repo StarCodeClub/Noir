@@ -29,7 +29,7 @@ class GetPlayers : Listener {
 
         // 去掉 ** 分隔符
         reply = reply.replace("**", "")
-        var playerList = StringBuilder()
+        val playerList = StringBuilder()
         players.forEach { i ->
             playerList.append(i.name).append(", ")
         }

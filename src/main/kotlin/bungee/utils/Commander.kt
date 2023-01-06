@@ -19,7 +19,7 @@ class Commander(senderName: String): CommandSender {
         return this.name
     }
 
-    @Deprecated("Deprecated in Bugeecord API")
+    @Deprecated("Deprecated in Bungeecord API")
     override fun sendMessage(message: String) {
         this.messages.add(message)
     }
