@@ -27,6 +27,11 @@ class CommandDispatch: Listener {
 
         BungeeMain.getInstance().proxy.pluginManager.dispatchCommand(commander, command)
 
+        if (commander.getMessage().isEmpty()) {
+            MiraiUtil.sendMiraiMessageAsync(e.getEvent().group, "命令无返回")
+            return
+        }
+
         val reply = StringBuilder()
         commander.getMessage().forEach {
             reply.append(it).append("\n")
