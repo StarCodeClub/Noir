@@ -93,6 +93,10 @@ class BungeeMain : Plugin() {
             return groupID
         }
 
+        fun getAdmin(): List<Long> {
+            return admin
+        }
+
         fun getInstance(): BungeeMain {
             return instance
         }
