@@ -14,6 +14,7 @@ class GetPlayers : Listener {
             return
 
         val players = BungeeMain.getInstance().proxy.players
+        val servers = BungeeMain.getInstance().proxy.servers
         var reply = BungeeMain.getConfig().getString("command.getPlayers.format")
         reply = reply.replace("%online%", players.size.toString())
 
@@ -30,10 +31,19 @@ class GetPlayers : Listener {
         // 去掉 ** 分隔符
         reply = reply.replace("**", "")
         val playerList = StringBuilder()
-        players.forEach { i ->
-            playerList.append(i.name).append(", ")
+        var serverNick: String
+        servers.values.forEach {
+            // 如果有服务器nick则设置，否则保持原来名称
+            serverNick = if (BungeeMain.getConfig().getString("command.execute.server-nick." + it.name) == "")
+                BungeeMain.getConfig().getString("command.execute.server-nick." + it.name)
+            else
+                it.name
+            playerList.append("[").append(serverNick).append("]")
+            it.players.forEach { player ->
+                playerList.append(player.name).append(",")
+            }
+            playerList.dropLast(1) // 去除后面的 ", "
         }
-        reply = reply.replace("%players%", playerList.toString().drop(2)) // 去除后面的 ", "
 
         MiraiUtil.sendMiraiMessageAsync(
             e.getEvent().group, reply
