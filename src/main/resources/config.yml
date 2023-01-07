@@ -26,6 +26,8 @@ command:
     trigger: '/'
     # 是否加上执行命令花费的时间
     time-spent: false
+    no-return: '已执行，命令无返回'
+    error: '发送异常，请检查控制台'
     sender-name: 'xiaomu18'
 
   chat:

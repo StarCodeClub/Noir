@@ -26,7 +26,7 @@ class Chat : Listener {
             bot = MiraiBot.getBot(BungeeMain.getBotID())
             group = bot.getGroup(BungeeMain.getGroupID())
         } catch (e: NoSuchElementException) {
-            e.printStackTrace()
+            BungeeMain.warn("The bot or group ID that you configured is not exists, check if your bot is logged")
             return
         }
 
@@ -34,8 +34,13 @@ class Chat : Listener {
         message = message.replace("%name%", (e.sender as ProxiedPlayer).name)
         message = message.replace(
             "%message%",
-            e.message.drop(BungeeMain.getConfig().getString("command.chat.mc2qq.trigger").length + 1)
+            e.message.drop(BungeeMain.getConfig().getString("command.chat.mc2qq.trigger").length)
         )
+
+        if (e.message
+                .drop(BungeeMain.getConfig().getString("command.chat.mc2qq.trigger").length).isEmpty()
+        ) // 如果信息为空不发送
+            return
 
         MiraiUtil.sendMiraiMessageAsync(group, message)
     }

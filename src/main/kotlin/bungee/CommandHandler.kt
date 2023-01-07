@@ -26,7 +26,7 @@ class CommandHandler : Command("noir") {
             }
 
             "reload" -> {
-                reloadCommandHandle(sender)
+                // reloadCommandHandle(sender)
             }
 
             "help" -> {
@@ -55,13 +55,11 @@ class CommandHandler : Command("noir") {
         add("&aMiraiMC&7: &b${BungeeMain.miraiVersion}")
         add("&eBot ID&7： &b${BungeeMain.getBotID()}")
         add("&eGroup ID&7: &b${BungeeMain.getGroupID()}")
+        add("&eDeveloped by Klop233. Please check github repo if you have any issue,you can also contact me through the information on my github profile,the github repo link is shown below")
+        add("&ehttps://github.com/StarCraftOfficial/Noir")
 
         messages.forEach {
             sender.sendMessage(it)
         }
-    }
-
-    private fun reloadCommandHandle(sender: CommandSender) {
-
     }
 }

@@ -25,7 +25,14 @@ class CommandDispatch: Listener {
             BungeeMain.getConfig().getString("command.execute.sender-name")
         )
 
-        BungeeMain.getInstance().proxy.pluginManager.dispatchCommand(commander, command)
+        try {
+            BungeeMain.getInstance().proxy.pluginManager.dispatchCommand(commander, command)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            BungeeMain.warn("An error was occurred while Noir executing a command, check the message above")
+            return
+        }
+
 
         if (commander.getMessage().isEmpty()) {
             MiraiUtil.sendMiraiMessageAsync(e.getEvent().group, "命令无返回")
