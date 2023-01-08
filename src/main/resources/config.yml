@@ -15,7 +15,7 @@ command:
       main: '主服'
       island: '空岛'
     # 回复格式，夹在 ** ** 中的文字会在在线人数为0时去除
-    format: '在线: %online%**, 玩家: %players%**'
+    format: '当前在线人数: %online%**%players%**'
 
   # MCQQ绑定设置
   bind:

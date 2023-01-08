@@ -34,17 +34,22 @@ class GetPlayers : Listener {
         var serverNick: String
         servers.values.forEach {
             // 如果有服务器nick则设置，否则保持原来名称
-            serverNick = if (BungeeMain.getConfig().getString("command.execute.server-nick." + it.name) == "")
-                BungeeMain.getConfig().getString("command.execute.server-nick." + it.name)
+            serverNick = if (BungeeMain.getConfig().getString("command.getPlayers.server-nick." + it.name) != "")
+                BungeeMain.getConfig().getString("command.getPlayers.server-nick." + it.name)
             else
                 it.name
-            playerList.append("[").append(serverNick).append("]")
-            it.players.forEach { player ->
-                playerList.append(player.name).append(",")
-            }
-            playerList.dropLast(1) // 去除后面的 ", "
-        }
 
+            if (!it.players.isEmpty()) {
+                playerList.append("\n")
+                playerList.append("[").append(serverNick).append("]").append(" ")
+                it.players.forEach { player ->
+                    playerList.append(player.name).append(",")
+                }
+                playerList.deleteCharAt(playerList.length - 1) // 删除最后一个 ","
+
+            }
+        }
+        reply = reply.replace("%players%", playerList.toString())
         MiraiUtil.sendMiraiMessageAsync(
             e.getEvent().group, reply
         )
