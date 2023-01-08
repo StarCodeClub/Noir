@@ -19,6 +19,4 @@ class NoirGroupCommandEvent(type: GroupCommandType, miraiEvent: MiraiGroupMessag
     fun getEvent(): MiraiGroupMessageEvent {
         return miraiEvent
     }
-
-
 }

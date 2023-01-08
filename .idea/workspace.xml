@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update workspace.xml">
+    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/event/FriendCommandType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirCommandEvent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/GetPlayers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/GetPlayers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirGroupCommandEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirGroupCommandEvent.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,17 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Sealed Interface" />
+        <option value="Kotlin Enum" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -73,6 +83,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="bungee.event" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Noir [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -110,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672815922775</updated>
       <workItem from="1672815924653" duration="42000" />
-      <workItem from="1673142608858" duration="662000" />
+      <workItem from="1673142608858" duration="3783000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
@@ -140,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672818068366</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1673143336869</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673143336869</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,9 +184,9 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/src" />
     </ignored-roots>
-    <MESSAGE value="update" />
     <MESSAGE value="修正gradlew脚本权限问题" />
     <MESSAGE value="update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
