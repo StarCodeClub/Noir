@@ -41,12 +41,11 @@ class GetPlayers : Listener {
 
             if (!it.players.isEmpty()) {
                 playerList.append("\n")
-                playerList.append("[").append(serverNick).append("]").append(" ")
+                playerList.append("[").append(serverNick).append(" ").append(it.players.size).append("]").append(" ")
                 it.players.forEach { player ->
                     playerList.append(player.name).append(",")
                 }
                 playerList.deleteCharAt(playerList.length - 1) // 删除最后一个 ","
-
             }
         }
         reply = reply.replace("%players%", playerList.toString())

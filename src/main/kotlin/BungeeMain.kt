@@ -29,11 +29,7 @@ class BungeeMain : Plugin() {
             .load(File(this.dataFolder, "config.yml"))
 
         // 初始化变量
-        miraiVersion = this.proxy.pluginManager.getPlugin("MiraiMC").description.version
-        version = this.description.version
-        botID = config.getLong("general.botID")
-        groupID = config.getLong("general.groupID")
-        admin = config.getLongList("general.admin")
+        loadConfig()
 
         // 注册命令和事件
         this.proxy.pluginManager.registerCommand(this, CommandHandler())
@@ -99,6 +95,14 @@ class BungeeMain : Plugin() {
 
         fun getInstance(): BungeeMain {
             return instance
+        }
+
+        fun loadConfig() {
+            miraiVersion = instance.proxy.pluginManager.getPlugin("MiraiMC").description.version
+            version = instance.description.version
+            botID = config.getLong("general.botID")
+            groupID = config.getLong("general.groupID")
+            admin = config.getLongList("general.admin")
         }
     }
 }

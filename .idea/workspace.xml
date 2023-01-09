@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/event/FriendCommandType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirCommandEvent.kt" afterDir="false" />
+    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="开大坑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirGroupCommandEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirGroupCommandEvent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirCommandEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirCommandEvent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/GetPlayers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/GetPlayers.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,24 +72,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="bungee.event" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Noir [jar]">
+    <configuration name="Noir [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Noir [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -113,6 +135,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Noir [jar]" />
+        <item itemvalue="Gradle.Noir [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +148,9 @@
       <option name="presentableId" value="Default" />
       <updated>1672815922775</updated>
       <workItem from="1672815924653" duration="42000" />
-      <workItem from="1673142608858" duration="3783000" />
+      <workItem from="1673142608858" duration="6329000" />
+      <workItem from="1673183661830" duration="2645000" />
+      <workItem from="1673227670339" duration="519000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
@@ -162,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673143336869</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="开大坑">
+      <created>1673167920247</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673167920247</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +219,7 @@
     <MESSAGE value="修正gradlew脚本权限问题" />
     <MESSAGE value="update workspace.xml" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="开大坑" />
+    <option name="LAST_COMMIT_MESSAGE" value="开大坑" />
   </component>
 </project>

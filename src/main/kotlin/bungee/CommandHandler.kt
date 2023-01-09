@@ -6,6 +6,9 @@ import net.md_5.bungee.api.ChatColor
 import net.md_5.bungee.api.CommandSender
 import net.md_5.bungee.api.chat.TextComponent
 import net.md_5.bungee.api.plugin.Command
+import net.md_5.bungee.config.ConfigurationProvider
+import net.md_5.bungee.config.YamlConfiguration
+import java.io.File
 import java.util.*
 
 class CommandHandler : Command("noir") {
@@ -26,11 +29,11 @@ class CommandHandler : Command("noir") {
             }
 
             "reload" -> {
-                // reloadCommandHandle(sender)
+                reloadCommandHandle(sender)
             }
 
             "help" -> {
-
+                helpCommandHandle(sender)
             }
 
             "group" -> {
@@ -49,14 +52,39 @@ class CommandHandler : Command("noir") {
             )
         }
 
-        add("")
         add("&dNoir information")
         add("&dNoir&7: &b${BungeeMain.version}")
         add("&aMiraiMC&7: &b${BungeeMain.miraiVersion}")
         add("&eBot ID&7： &b${BungeeMain.getBotID()}")
         add("&eGroup ID&7: &b${BungeeMain.getGroupID()}")
-        add("&eDeveloped by Klop233. Please check github repo if you have any issue,you can also contact me through the information on my github profile,the github repo link is shown below")
-        add("&ehttps://github.com/StarCraftOfficial/Noir")
+        add("&eDeveloped by Klop233")
+
+        messages.forEach {
+            sender.sendMessage(it)
+        }
+    }
+
+    private fun reloadCommandHandle(sender: CommandSender) {
+        BungeeMain.config = ConfigurationProvider.getProvider(YamlConfiguration::class.java)
+            .load(File(BungeeMain.getInstance().dataFolder, "config.yml"))
+        BungeeMain.loadConfig()
+        sender.sendMessage(TextComponent(ChatColor.LIGHT_PURPLE.toString() +  "Noir config reload successfully"))
+    }
+
+    private fun helpCommandHandle(sender: CommandSender) {
+        val messages = mutableListOf<TextComponent>()
+        fun add(msg: String) {
+            messages.add(
+                TextComponent(
+                    ChatColor.translateAlternateColorCodes('&', msg)
+                )
+            )
+        }
+
+        add("&dNoir version    &e-- show the information of Noir")
+        add("&dNoir reload     &e-- reload config")
+        add("&dNoir help       &e-- show this help")
+        add("&dNoir group      &e-- show group command help")
 
         messages.forEach {
             sender.sendMessage(it)
