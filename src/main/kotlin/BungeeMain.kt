@@ -97,6 +97,9 @@ class BungeeMain : Plugin() {
             return instance
         }
 
+        /**
+         * Read data from loaded config
+         */
         fun loadConfig() {
             miraiVersion = instance.proxy.pluginManager.getPlugin("MiraiMC").description.version
             version = instance.description.version

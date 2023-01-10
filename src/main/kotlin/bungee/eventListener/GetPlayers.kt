@@ -34,8 +34,9 @@ class GetPlayers : Listener {
         var serverNick: String
         servers.values.forEach {
             // 如果有服务器nick则设置，否则保持原来名称
-            serverNick = if (BungeeMain.getConfig().getString("command.getPlayers.server-nick." + it.name) != "")
-                BungeeMain.getConfig().getString("command.getPlayers.server-nick." + it.name)
+            serverNick = BungeeMain.getConfig().getString("command.getPlayers.server-nick." + it.name)
+            serverNick = if (serverNick != "")
+                serverNick
             else
                 it.name
 
@@ -43,9 +44,10 @@ class GetPlayers : Listener {
                 playerList.append("\n")
                 playerList.append("[").append(serverNick).append(" ").append(it.players.size).append("]").append(" ")
                 it.players.forEach { player ->
-                    playerList.append(player.name).append(",")
+                    playerList.append(player.name).append(", ")
                 }
-                playerList.deleteCharAt(playerList.length - 1) // 删除最后一个 ","
+                playerList.deleteCharAt(playerList.length - 1)
+                    .deleteCharAt(playerList.length - 1)// 删除最后一个 ", "
             }
         }
         reply = reply.replace("%players%", playerList.toString())

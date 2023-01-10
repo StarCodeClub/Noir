@@ -14,7 +14,7 @@ import net.md_5.bungee.api.plugin.Listener
 import net.md_5.bungee.event.EventHandler
 
 class Chat : Listener {
-    @EventHandler
+    @EventHandler // MC => QQ
     fun onInGameChat(e: ChatEvent) {
         if (!e.message.startsWith(BungeeMain.getConfig().getString("command.chat.mc2qq.trigger")))
             return
@@ -45,7 +45,7 @@ class Chat : Listener {
         MiraiUtil.sendMiraiMessageAsync(group, message)
     }
 
-    @EventHandler
+    @EventHandler // QQ => MC
     fun onQQChat(e: NoirGroupCommandEvent) {
         if (e.getType() != GroupCommandType.CHAT)
             return
