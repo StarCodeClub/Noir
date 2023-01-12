@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" afterDir="false" />
-    </list>
+    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,6 +175,7 @@
       <workItem from="1673351712383" duration="995000" />
       <workItem from="1673425647653" duration="337000" />
       <workItem from="1673491274421" duration="2859000" />
+      <workItem from="1673496632878" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
