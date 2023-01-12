@@ -11,7 +11,6 @@ import net.md_5.bungee.config.ConfigurationProvider
 import net.md_5.bungee.config.YamlConfiguration
 import java.io.File
 import java.util.*
-import javax.xml.soap.Text
 
 class CommandHandler : Command("noir") {
     override fun execute(sender: CommandSender, args: Array<out String>) {
