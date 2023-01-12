@@ -3,6 +3,7 @@ package me.klop233.noir.bungee.eventListener
 import me.dreamvoid.miraimc.api.MiraiBot
 import me.dreamvoid.miraimc.api.bot.MiraiGroup
 import me.klop233.noir.BungeeMain
+import me.klop233.noir.Messages
 import me.klop233.noir.bungee.event.GroupCommandType
 import me.klop233.noir.bungee.event.NoirGroupCommandEvent
 import me.klop233.noir.bungee.utils.MiraiUtil
@@ -42,6 +43,7 @@ class Chat : Listener {
         ) // 如果信息为空不发送
             return
 
+        (e.sender as ProxiedPlayer).sendMessage(Messages.CHAT_MSG_SENT.toComponent())
         MiraiUtil.sendMiraiMessageAsync(group, message)
     }
 
@@ -51,7 +53,6 @@ class Chat : Listener {
             return
 
         var message = BungeeMain.getConfig().getString("command.chat.qq2mc.format")
-        BungeeMain.info(message)
         val pureMessage = e.getEvent()
             .message.drop(BungeeMain.getConfig().getString("command.chat.qq2mc.trigger").length)
 

@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bukkit/CommandHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/storage/SqlCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/storage/SqlManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/AsyncCommander.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/FuckQiu.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BukkitMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BukkitMain.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/event/FriendCommandType.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/event/NoirCommandEvent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Messages.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Messages.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/Chat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/Chat.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/GetPlayers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/GetPlayers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/MiraiUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/MiraiUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/CommandDispatch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/CommandDispatch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/AsyncCommander.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/AsyncCommander.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/ServerUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/ServerUtil.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +60,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Class" />
         <option value="Kotlin Sealed Interface" />
         <option value="Kotlin Enum" />
+        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -140,9 +137,31 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Noir [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Noir [jar]" />
+        <item itemvalue="Gradle.Noir [testClasses]" />
         <item itemvalue="Gradle.Noir [clean]" />
       </list>
     </recent_temporary>
@@ -162,7 +181,10 @@
       <workItem from="1673264107690" duration="777000" />
       <workItem from="1673313964474" duration="125000" />
       <workItem from="1673314104064" duration="1591000" />
-      <workItem from="1673315882574" duration="722000" />
+      <workItem from="1673315882574" duration="3527000" />
+      <workItem from="1673351712383" duration="995000" />
+      <workItem from="1673425647653" duration="337000" />
+      <workItem from="1673491274421" duration="2208000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
@@ -220,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673228274215</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1673317284428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673317284428</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

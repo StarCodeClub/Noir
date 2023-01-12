@@ -4,6 +4,7 @@ import me.klop233.noir.bungee.CommandHandler
 import me.klop233.noir.bungee.event.EventCaller
 import me.klop233.noir.bungee.eventListener.Chat
 import me.klop233.noir.bungee.eventListener.CommandDispatch
+import me.klop233.noir.bungee.eventListener.FuckQiu
 import me.klop233.noir.bungee.eventListener.GetPlayers
 import net.md_5.bungee.api.plugin.Plugin
 import net.md_5.bungee.config.Configuration
@@ -37,6 +38,7 @@ class BungeeMain : Plugin() {
         this.proxy.pluginManager.registerListener(this, GetPlayers())
         this.proxy.pluginManager.registerListener(this, Chat())
         this.proxy.pluginManager.registerListener(this, CommandDispatch())
+        this.proxy.pluginManager.registerListener(this, FuckQiu())
 
         info(Messages.WELCOME.toString())
         info("Environment: Noir $version   MiraiMC $miraiVersion")

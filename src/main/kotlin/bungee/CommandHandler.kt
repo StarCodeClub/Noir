@@ -2,6 +2,7 @@ package me.klop233.noir.bungee
 
 import me.klop233.noir.BungeeMain
 import me.klop233.noir.Messages
+import me.klop233.noir.bungee.eventListener.CommandDispatch
 import net.md_5.bungee.api.ChatColor
 import net.md_5.bungee.api.CommandSender
 import net.md_5.bungee.api.chat.TextComponent
@@ -38,6 +39,10 @@ class CommandHandler : Command("noir") {
 
             "group" -> {
                 // groupCommandHandle(sender, args)
+            }
+
+            "tasks" -> {
+                tasksCommandHandle(sender)
             }
         }
     }
@@ -85,9 +90,19 @@ class CommandHandler : Command("noir") {
         add("&dNoir reload     &e-- reload config")
         add("&dNoir help       &e-- show this help")
         add("&dNoir group      &e-- show group command help")
+        add("&dNoir tasks      &e-- show command dispatch tasks")
 
         messages.forEach {
             sender.sendMessage(it)
+        }
+    }
+
+    private fun tasksCommandHandle(sender: CommandSender) {
+        sender.sendMessage(
+            "${ChatColor.LIGHT_PURPLE}Noir Total tasks: ${CommandDispatch.taskPool.size}"
+        )
+        CommandDispatch.taskPool.forEach {
+            sender.sendMessage("ID: ${it.getTask().id} Command: ${it.getCommand()}")
         }
     }
 }
