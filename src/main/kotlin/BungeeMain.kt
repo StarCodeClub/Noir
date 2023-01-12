@@ -6,6 +6,7 @@ import me.klop233.noir.bungee.eventListener.Chat
 import me.klop233.noir.bungee.eventListener.CommandDispatch
 import me.klop233.noir.bungee.eventListener.FuckQiu
 import me.klop233.noir.bungee.eventListener.GetPlayers
+import net.md_5.bungee.api.connection.ProxiedPlayer
 import net.md_5.bungee.api.plugin.Plugin
 import net.md_5.bungee.config.Configuration
 import net.md_5.bungee.config.ConfigurationProvider
@@ -45,6 +46,10 @@ class BungeeMain : Plugin() {
     }
 
     override fun onDisable() {
+        info("Canceling ${CommandDispatch.taskPool.size} tasks and shutdown")
+        CommandDispatch.taskPool.forEach {
+            it.getTask().cancel()
+        }
         Messages.GOODBYE.toString()
     }
 

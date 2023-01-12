@@ -11,6 +11,7 @@ import net.md_5.bungee.config.ConfigurationProvider
 import net.md_5.bungee.config.YamlConfiguration
 import java.io.File
 import java.util.*
+import javax.xml.soap.Text
 
 class CommandHandler : Command("noir") {
     override fun execute(sender: CommandSender, args: Array<out String>) {
@@ -102,7 +103,7 @@ class CommandHandler : Command("noir") {
             "${ChatColor.LIGHT_PURPLE}Noir Total tasks: ${CommandDispatch.taskPool.size}"
         )
         CommandDispatch.taskPool.forEach {
-            sender.sendMessage("ID: ${it.getTask().id} Command: ${it.getCommand()}")
+            sender.sendMessage("${ChatColor.YELLOW} ID: ${it.getTask().id} Command: ${it.getCommand()} Sender: ${it.name}")
         }
     }
 }

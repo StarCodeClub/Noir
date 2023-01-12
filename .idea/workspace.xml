@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/FuckQiu.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BungeeMain.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Messages.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Messages.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/Chat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/Chat.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/CommandDispatch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/CommandDispatch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/AsyncCommander.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/AsyncCommander.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/ServerUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/ServerUtil.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +178,7 @@
       <workItem from="1673315882574" duration="3527000" />
       <workItem from="1673351712383" duration="995000" />
       <workItem from="1673425647653" duration="337000" />
-      <workItem from="1673491274421" duration="2208000" />
+      <workItem from="1673491274421" duration="2859000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
@@ -249,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673317284428</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1673495153496</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673495153497</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
