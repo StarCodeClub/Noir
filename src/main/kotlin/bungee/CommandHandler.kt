@@ -73,7 +73,7 @@ class CommandHandler : Command("noir") {
         BungeeMain.config = ConfigurationProvider.getProvider(YamlConfiguration::class.java)
             .load(File(BungeeMain.getInstance().dataFolder, "config.yml"))
         BungeeMain.loadConfig()
-        sender.sendMessage(TextComponent(ChatColor.LIGHT_PURPLE.toString() +  "Noir config reload successfully"))
+        sender.sendMessage(TextComponent("${ChatColor.LIGHT_PURPLE} Noir config reload successfully"))
     }
 
     private fun helpCommandHandle(sender: CommandSender) {
