@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# `Noir`
+# `Noir` / `ノワール`
 
 <p>一个基于MiraiMC的MineCraft Spigot插件</p>
 <p>MiraiMC Github 仓库地址 --> <a href="https://github.com/DreamVoid/MiraiMC">DreamVoid/MiraiMC</a></p>
