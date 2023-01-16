@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/miraiCommand/Command.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/miraiCommand/FriendCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/miraiCommand/GroupCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/miraiCommand/Manager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/storage/BaseSqlManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/storage/SqlLiteManager.kt" afterDir="false" />
+    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="🚧 | 继续挖坑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/CommandHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/CommandDispatch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/eventListener/CommandDispatch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/storage/SqlManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/bungee/storage/MySqlManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/bungee/utils/Commander.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +61,9 @@
       </list>
     </option>
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -78,19 +73,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="bungee.event" />
@@ -163,8 +161,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Noir [jar]" />
-        <item itemvalue="Gradle.Noir [testClasses]" />
         <item itemvalue="Gradle.Noir [clean]" />
+        <item itemvalue="Gradle.Noir [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +189,11 @@
       <workItem from="1673531104456" duration="2619000" />
       <workItem from="1673576601487" duration="43000" />
       <workItem from="1673576661570" duration="358000" />
+      <workItem from="1673577041110" duration="1270000" />
+      <workItem from="1673578378775" duration="12000" />
+      <workItem from="1673578408869" duration="111000" />
+      <workItem from="1673785445415" duration="219000" />
+      <workItem from="1673859065919" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
@@ -276,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673497238813</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="🚧 | 继续挖坑">
+      <created>1673577213168</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673577213168</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +315,12 @@
     <MESSAGE value="update" />
     <MESSAGE value="fix build?" />
     <MESSAGE value="fix build" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix build" />
+    <MESSAGE value=" | 继续挖坑" />
+    <option name="LAST_COMMIT_MESSAGE" value=" | 继续挖坑" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
