@@ -5,6 +5,9 @@
 <p>MiraiMC Github 仓库地址 --> <a href="https://github.com/DreamVoid/MiraiMC">DreamVoid/MiraiMC</a></p>
 <p>这个项目的名字来源于 <a href="https://zh.moegirl.org.cn/%E6%98%9F%E7%A9%BA%E5%88%97%E8%BD%A6%E4%B8%8E%E7%99%BD%E7%9A%84%E6%97%85%E8%A1%8C">《星空列车与白的旅行》</a></p>
 
+![Github Action](https://img.shields.io/github/actions/workflow/status/StarCraftOffical/Noir/.github/workflows/gradle.yml?style=flat-square)
+![License](https://img.shields.io/github/license/NaturalCodeClub/Hearse?style=flat-square)
+
 ### 服务端支持
 
 - [x] Spigot 1.8+
