@@ -18,11 +18,7 @@
     - help - 获取命令帮助
     - reload - 重载插件配置文件
     - version - 查看运行信息
-    - group - 获取group子命令帮助
-        - add-admin [QQ号]  - 添加QQ管理员
-        - rm-admin [QQ号]  - 删除QQ管理员
-        - alist - 获取QQ管理员列表
-        - say [信息]  - 向群内发送一条信息
+    - tasks - 查看群命令队列    
 
 ### TODO
 优先支持 BuneeCord
