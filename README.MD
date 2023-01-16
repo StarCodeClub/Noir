@@ -1,4 +1,3 @@
-## 此项目目前为 `StarCraft` 内部项目
 # `Noir` / `ノワール`
 
 <img src="https://github.com/Klop233/Klop233/raw/main/Noir.jpg" alt="Hearse logo" align="right" width="200">
