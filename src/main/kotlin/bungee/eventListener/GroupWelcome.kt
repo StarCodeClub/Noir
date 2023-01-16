@@ -8,5 +8,6 @@ class GroupWelcome: Listener {
     @EventHandler
     fun onJoin(e: MiraiMemberJoinEvent) {
         e.group.sendMessage("")
+
     }
 }
