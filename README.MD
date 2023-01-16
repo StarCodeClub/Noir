@@ -36,6 +36,10 @@
 ### 致谢
 再次感谢 **<a href="https://github.com/DreamVoid/MiraiMC">MiraiMC</a>** 提供的接口
 
+### 其他
+Commit Style: https://gitmoji.dev/ <br>
+Contributor: `Klop233` `Nisse93`
+
 ---
 
 <div align="center">
