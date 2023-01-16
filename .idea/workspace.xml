@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment="🚧 | 继续挖坑">
+    <list default="true" id="deea6079-da88-4a41-be1c-4a3e4ef01144" name="变更" comment=":memo: update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +192,7 @@
       <workItem from="1673578378775" duration="12000" />
       <workItem from="1673578408869" duration="111000" />
       <workItem from="1673785445415" duration="219000" />
-      <workItem from="1673859065919" duration="296000" />
+      <workItem from="1673859065919" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1672816927524</created>
@@ -286,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673577213168</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=":memo: update readme">
+      <created>1673859420146</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673859420146</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +322,8 @@
     <MESSAGE value="fix build?" />
     <MESSAGE value="fix build" />
     <MESSAGE value=" | 继续挖坑" />
-    <option name="LAST_COMMIT_MESSAGE" value=" | 继续挖坑" />
+    <MESSAGE value=":memo: update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: update readme" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
